@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 2000px;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 8%;
+    background-color: rgba(0, 0, 0, 0.202);
+    border-radius: 15px;
+    position: fixed;
+    top: 1rem;
+    left: 20rem;
+    right: 15rem;
+    z-index: 9999;
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(168, 121, 19);
+}
+
+
+.navbar .navbar-nav a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+    
+}
+
+.navbar .navbar-nav a:hover {
+    color: #b7703a;
+    
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #b7703a;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    color: white;
+    margin: 0 0.5rem;
+    
+}
+/* navbar */
+
+/* section */
+ .hero {
+    min-height: 115vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} 
+
+/* section */
+
+
+
+
+/* homw */
+.home {    
+    padding: 10rem 7% 1.4rem;
+    min-height: 110vh;
+    background-color: rgb(222, 222, 222);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.home .isi {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 13%;
+    color: rgb(168, 126, 48);
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home .img {
+    display: flex;
+    justify-content: center;
+    padding: 7rem;
+    margin-left: 3rem;   
+}
+
+.home .img img{
+    width: 19rem;
+    margin: 1rem;
+    transition: 0.5s;
+}
+
+.home .img .img1 :hover {
+    width: 20rem;
+    margin: 1rem;
+
+    
+}
+
+.home .img .img2 :hover {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.home .img .img3 :hover {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.home .img .img4 :hover {
+    width: 20rem;
+    margin: 1rem;
+}
+/* home */
+
+
+
+
+
+/* about */
+
+.about {
+
+    min-height: 75vh;
+    background-image: url(bg_about.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    
+}
+
+.about .isi {
+    min-height: 90vh;
+    background-color: #00000092;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+}
+ .about .img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10rem;
+ }
+
+ .about .img img {
+    width: 50rem;
+    height: 30rem;
+    margin-bottom: 25%;
+ }
+
+.about .word {
+    margin-top: 1%;
+    margin-left: 14%;
+    color: white;
+    font-size: 1rem;
+}
+
+.about .word a {
+    color: white;
+    background-color: #b7703a;
+    padding: 0.5rem;
+    position: relative; top: 1rem;
+}
+
+
+.about .word h4 {
+    font-family: "Dancing Script", cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* about */
+
+
+
+
+/* menu */
+.menu{
+    padding: 6rem 7% ;
+    min-height: 110vh;
+    background-color: rgb(222, 222, 222);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+.menu .isi {
+    display:flex;
+    padding: 1rem 9%;
+    color: rgb(168, 126, 48);
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu .img {
+    display:flex;
+    justify-content: center;
+    padding: 3rem 10%; 
+}
+
+.menu .img img {
+    margin: 1rem;
+}
+
+.menu .bg1 {
+    display: grid;
+}
+
+.menu .btn {
+    color: rgb(205, 183, 183);
+    padding: 0.8rem;
+    position: relative; left: 82.4%; bottom: 2rem;
+    background-color: #b7703a;
+    font-weight: 600;
+}
+
+
+/* menu */
+
+
+
+
+/* contact */
+.about {
+    min-height: 75vh;
+    background-image: url(bg_contact.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about .isi {
+    min-height: 90vh;
+    background-color: #00000092;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* contact */
+
+
+
+
+/* end */
+.contact {
+    padding: 1rem 7% ;
+    background-color: rgb(62, 62, 62);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+
+}
+
+.contact .tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+} 
+
+.contact .tittle h2 {
+    color: rgb(255, 255, 255);
+}
+
+.contact .isi {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+}
+
+.contact .isi .jam .content {
+    margin-top: 2rem;
+    position: relative;
+
+}
+
+.contact .isi .sosmed .content {
+    display: grid;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.contact .isi .sosmed .content a {
+    padding: 0.5rem;
+    
+}
+
+
+
+.contact .isi .maps .mapbox {
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+/* end */
+
+
+
+/* paralax */
+.parralax {
+    background-attachment: fixed;
+}
+/* paralax */
+
+
+
+/* media queries */
+
+/* laptop */
+@media (max-width:1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width:768px) {
+    html {
+        font-size: 62%;
+    }
+
+}
+/* hp */
+@media (max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+}
